@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Assignment</title>
+	<link rel="stylesheet" href="css/css-reset.css">
+	<style>
+		#header{
+			height: 80px;
+			position: sticky;
+			top: 0;
+			left: 0;
+			border-bottom: 1px solid lightgray;
+			z-index: 2;
+			background-color: white;
+		}
+		#nav{
+			position: fixed;
+			width: 200px;
+			height: 100%;
+			border-right: 1px solid lightgray;
+			/*background-color: yellow;*/
+		}
+		#main{
+			margin-left: 200px;
+			padding: 10px;
+			/*background-color: green;*/
+		}
+		#container{
+			position: relative;
+		}
+		#footer{
+			margin-top: 10px;
+			border-top: 1px solid lightgray;
+			padding: 20px;
+			text-align: center;
+			/*background-color: aqua;*/
+		}
+		#header img{
+			/*height: 100px;*/
+			width: 150px;
+			padding: 20px;
+		}
+		#nav ul li{
+			text-align: center;
+			padding: 10px;
+			
+		}
+		#nav ul li:hover{
+			cursor: pointer;
+			background-color: lightgray;
+		}
+		.submenu{
+			background-color: white;
+			display: none;
+			position: absolute;
+			left: 200px;
+			top: 0;
+			width: 200px;
+			border: 1px solid lightgray;
+		}
+		.dropdown:hover .submenu{
+			display: block;
+		}
+		.dropdown{
+			position: relative;
+		}
+		#share{
+			position: fixed;
+			bottom: 100px;
+			right: 50px;
+			width: 50px;
+			height: 50px;
+			background-color: red;
+			border-radius: 50px;
+			cursor: pointer;
+		}
+		#share .btn{
+			width: 50px;
+			height: 50px;
+			background-color: purple;
+			margin: 10px 0;
+			border-radius: 50px;
+		}
+		#share-container{
+			position: absolute;
+			bottom: 50px;
+			display: none;
+		}
+		#share:hover #share-container{
+			display: block;
+		}
+		#share-container:hover{
+			display: block;
+		}
+		
+	</style>
+</head>
+<body>
+<div id="header">
+	<img src="https://www.ijse.lk/images/logos/ijse.png" alt="">
+</div>
+<div id="container">
+	<div id="nav">
+		<ul>
+			<li>Home</li>
+			<li class="dropdown">Courses
+				<ul class="submenu">
+					<li>CMJD</li>
+					<li>DEP</li>
+					<li>ABSD</li>
+				</ul>
+			</li>
+			<li>About Us</li>
+			<li>Contact Us</li>
+		</ul>
+	</div>
+	<div id="main">
+		<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet aperiam assumenda, culpa dicta
+		     dignissimos dolorum et facilis inventore ipsam magni, natus non nulla numquam provident quas qui rem
+		     suscipit.
+		</div>
+		<img src="download.png" alt="">
+		<div>Inventore nihil quia reprehenderit. Ab animi consectetur consequatur culpa cum doloremque enim et eum illum
+		     impedit iure iusto minus modi mollitia nobis optio quo, repellat, sapiente totam vel velit veniam.
+		</div>
+		<div>Aliquam aspernatur beatae debitis dignissimos eos, et fuga hic id officia pariatur quas quis quo
+		     repudiandae rerum ut? Animi distinctio fuga in ipsum laborum magnam maiores, molestias quae tempore
+		     voluptatibus.
+		</div>
+		<div>Accusantium aperiam consequatur corporis culpa cupiditate dignissimos, distinctio dolorem eius eum ex harum
+		     hic illum maxime minima mollitia nemo, neque obcaecati, pariatur quia quibusdam rem rerum sapiente sit.
+		     Quos, voluptas.
+		</div>
+		<div>Aut beatae consequatur, cupiditate dignissimos esse eveniet facilis minus natus neque, nesciunt nulla
+		     quaerat quia quibusdam reprehenderit similique sint temporibus totam vel! Commodi dicta harum iure nemo,
+		     rerum sequi tenetur!
+		</div>
+		<div>Architecto at consequuntur dolores, dolorum eligendi enim excepturi fugit, illo incidunt iste iure labore
+		     laboriosam magnam nam nemo nihil nisi non optio possimus praesentium quisquam reiciendis repellat velit
+		     voluptates voluptatum!
+		</div>
+		<div>Deleniti explicabo laboriosam nemo. Amet atque beatae consectetur, consequuntur doloremque, earum et fuga
+		     hic id impedit in ipsa maxime nobis non placeat possimus quibusdam rem repellendus repudiandae saepe ullam
+		     voluptas!
+		</div>
+		<div>Aliquam asperiores dolorem enim esse fugiat illo iste quidem reiciendis soluta tempore! At dolor earum
+		     harum illo ipsa ipsum molestias quas voluptas? Est, laborum optio quos repellendus unde veniam veritatis.
+		</div>
+		<div>Ipsum maxime quibusdam ratione veritatis! Ab aut deserunt ipsam iste laudantium optio! Ab adipisci amet
+		     aspernatur debitis deserunt, eius explicabo fuga harum incidunt magni numquam obcaecati officia perferendis
+		     possimus unde.
+		</div>
+		<div>Accusantium adipisci aliquam architecto aspernatur atque commodi cumque dignissimos dolorem, dolores
+		     ducimus eligendi eos error excepturi facere harum minus molestiae officia perspiciatis porro praesentium
+		     quisquam quod repellendus repudiandae rerum, tempore.
+		</div>
+		<div>Distinctio error illo laboriosam laudantium reprehenderit. Animi architecto dignissimos excepturi ipsam
+		     libero nemo nesciunt obcaecati tempora? Amet aut fuga hic illo impedit iste magni neque non tempora
+		     voluptatum! Labore, rem.
+		</div>
+		<div>Ab animi architecto atque autem deleniti dolor dolore earum error et fugiat id illo iure laudantium modi
+		     nostrum officia placeat quidem ratione sequi sunt suscipit unde velit vitae, voluptas voluptates.
+		</div>
+		<div>Aliquam beatae dolore excepturi veniam! Ab adipisci aliquid assumenda autem enim exercitationem mollitia
+		     provident quidem repudiandae! Autem consequuntur culpa doloribus id nostrum officia quae quaerat quasi,
+		     quisquam, quod tenetur velit.
+		</div>
+		<div>Accusamus beatae consequuntur, cum deserunt doloribus ea id iste iure libero non nostrum pariatur quas quis
+		     quos suscipit unde voluptate! Ad, aperiam ducimus illum ipsa iure quia quis saepe tenetur!
+		</div>
+		<div>Aliquid consectetur, cumque doloribus et eum expedita facilis, in ipsam labore magni modi molestias nisi
+		     possimus provident quia repudiandae, totam veniam? Animi consequuntur eveniet explicabo illum quia quo
+		     tenetur voluptas.
+		</div>
+		<div>Assumenda aut, beatae corporis debitis distinctio dolorum fugit hic neque, nulla porro qui, quo sed
+		     similique! Architecto consequatur est et fugiat totam. Ducimus nihil officia quae! Distinctio expedita
+		     optio vitae.
+		</div>
+		<div>Consequatur modi mollitia, praesentium quis soluta veritatis? Architecto, corporis enim fugiat impedit
+		     numquam odit pariatur ratione repellat! Aliquam commodi debitis deleniti dolor illum itaque, porro rerum
+		     sapiente velit. Dolores, minima!
+		</div>
+		<div>Accusamus amet aperiam asperiores atque beatae consectetur delectus eaque excepturi, explicabo fugit harum
+		     impedit in maiores molestiae, nemo nesciunt, numquam praesentium quae quas quidem reiciendis rem rerum sit
+		     tempora veritatis.
+		</div>
+		<div>Aliquam animi assumenda autem commodi dicta dolor ducimus eaque eum eveniet ex in ipsum itaque libero
+		     molestiae non, numquam, odio odit optio perferendis placeat porro quisquam repellat repudiandae veniam,
+		     veritatis.
+		</div>
+		<div>Eius eligendi ipsum molestiae, officia placeat quis quod recusandae soluta. Adipisci aut cupiditate dolor,
+		     dolore earum eveniet facilis impedit inventore ipsum necessitatibus nemo nihil perferendis quam quas quo
+		     recusandae sequi?
+		</div>
+		<div>Accusamus amet culpa ducimus est eveniet ex exercitationem expedita explicabo fugit incidunt ipsa ipsum
+		     iste, iusto magni minima nisi odio quae qui quis quo ratione recusandae sint totam voluptatem voluptatum!
+		</div>
+		<div>Accusantium ad deserunt dicta dolorem eos est eum fuga illum impedit in ipsam laudantium mollitia, nihil
+		     nostrum obcaecati officia pariatur perferendis quibusdam, quidem quos repellat sapiente sed ullam veniam
+		     vitae!
+		</div>
+		<div>Consequuntur culpa cum dolorum eum harum labore libero molestiae, molestias nobis nostrum odit officia
+		     omnis possimus quae qui soluta velit vitae! At consequuntur eius harum illum in. Nemo, obcaecati, tenetur.
+		</div>
+		<div>Ab aliquid architecto beatae consectetur cum earum eum eveniet hic ipsam laboriosam necessitatibus, nihil,
+		     numquam officia omnis, pariatur quam quasi repellat reprehenderit rerum sed sint suscipit tenetur veniam
+		     voluptas voluptates.
+		</div>
+		<div>A ab beatae consequuntur ducimus et fuga minima officiis porro voluptatem! Assumenda consequatur, dicta
+		     esse fugit illum iure laboriosam laudantium natus nemo nesciunt placeat quaerat, quia quis ullam vitae
+		     voluptatibus?
+		</div>
+		<div>Architecto, asperiores aut consequatur deserunt dolores doloribus eligendi facere id, illo iusto libero
+		     maiores maxime neque numquam odit officiis perferendis quaerat qui repellat repellendus repudiandae sed
+		     similique sint sunt voluptatibus!
+		</div>
+		<div>Aperiam aspernatur at commodi cumque ducimus est, excepturi expedita laborum magnam minus obcaecati
+		     perferendis quae sint tenetur velit. Animi, debitis doloribus illo iusto mollitia optio perferendis quis
+		     quisquam quod veniam.
+		</div>
+		<div>Aut minus quas quos? Consectetur, dolore excepturi exercitationem iste odio officiis tempora ut
+		     voluptatibus. Ad alias culpa eaque esse, fuga harum maxime placeat porro. Aperiam aut laboriosam omnis
+		     optio unde.
+		</div>
+		<div>A accusamus, aliquam amet animi architecto at doloribus dolorum earum enim et facilis illo impedit labore
+		     magni maiores minima non numquam, pariatur quos repudiandae tempore velit voluptatum. Fugit, quidem,
+		     ratione.
+		</div>
+		<div>Alias dolor eius est et necessitatibus nihil omnis praesentium sed sunt tempore unde, veniam? Dolore est
+		     modi molestiae qui repellat sit unde veritatis. Cum, dignissimos expedita molestiae quas quibusdam
+		     voluptates?
+		</div>
+		<div id="footer">
+			Copyright &copy; 2020 IJSE DEP
+		</div>
+	</div>
+</div>
+<div id="share">
+	<div id="share-container">
+		<div class="btn"></div>
+		<div class="btn"></div>
+		<div class="btn"></div>
+	</div>
+</div>
+
+</body>
+</html>
